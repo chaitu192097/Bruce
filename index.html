@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>CALCULATOR</h1>
+
+    <div class="main">
+
+        <div class="display">
+            <button onclick="change_mode()" class="mode">.</button>
+            <div id="typed" class="typed"></div>
+            <div id="typing" class="typing">0</div>
+        </div>
+        <div class="butns">
+            <div class="row1">
+                <button id="Clear" class="butn" onclick="operation(id)" style="background-color: aqua;">C</button>
+                <button id="mod" class="butn" onclick="clickme(id)" style="background-color: aqua;">%</button>
+                <button id="clearall" class="butn" onclick="operation(id)" style="background-color: aqua;">CE</button>
+                <button id="divi" class="butn" onclick="clickme(id)" style="background-color: aqua;">/</button>
+            </div>
+            <div class="row1">
+                <button class="butn" id="7" onclick="clickme(id)">7</button>
+                <button class="butn" id="8" onclick="clickme(id)">8</button>
+                <button class="butn" id="9" onclick="clickme(id)">9</button>
+                <button class="butn" id="mul" onclick="clickme(id)" style="background-color: aqua;">*</button>
+            </div>
+            <div class="row1">
+                <button class="butn" id="4" onclick="clickme(id)">4</button>
+                <button class="butn" id="5" onclick="clickme(id)">5</button>
+                <button class="butn" id="6" onclick="clickme(id)">6</button>
+                <button class="butn" id="sub" onclick="clickme(id)" style="background-color: aqua;">-</button>
+            </div>
+            <div class="row1">
+                <button class="butn" id="1" onclick="clickme(id)">1</button>
+                <button class="butn" id="2" onclick="clickme(id)">2</button>
+                <button class="butn" id="3" onclick="clickme(id)">3</button>
+                <button class="butn" id="add"  onclick="clickme(id)" style="background-color: aqua;">+</button>
+            </div>
+            <div class="row1">
+                <button class="butn" id="00" onclick="clickme(id)">00</button>
+                <button class="butn" id="0" onclick="clickme(id)">0</button>
+                <button class="butn" id="dot" onclick="clickme(id)">.</button>
+                <button class="butn" id="ans" onclick="result()" style="background-color: aqua;">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="cal.js"></script>
+</body>
+
+</html>
